@@ -8,27 +8,31 @@
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+<body class="desktop">
+  <main>
+    <section class="card" aria-labelledby="profile-name">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="Portrait of Jessica Randall" class="avatar">
+      
+      <section class="profile-info">
+        <h1 id="profile-name" class="media-username">Jessica Randall</h1>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+        <p class="location">London, United Kingdom</p>
+
+        <p class="role">Front-end developer and avid reader.</p>
+      </section>
+
+      <nav class="social-links" aria-label="Social links">
+        <a class="button" href="#" rel="noopener" aria-label="Jessica's GitHub profile">GitHub</a>
+        <a class="button" href="#" rel="noopener" aria-label="Jessica's Frontend Mentor profile">Frontend Mentor</a>
+        <a class="button" href="#" rel="noopener" aria-label="Jessica's LinkedIn profile">LinkedIn</a>
+        <a class="button" href="#" rel="noopener" aria-label="Jessica's Twitter profile">Twitter</a>
+        <a class="button" href="#" rel="noopener" aria-label="Jessica's Instagram profile">Instagram</a>
+      </nav>
+    </section>
+  </main>
 </body>
 </html>
