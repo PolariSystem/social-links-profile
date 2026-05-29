@@ -9,7 +9,7 @@
 
     --card-radius: 1rem;
     --card-padding: 2.5rem;
-    --card-width: 400px;
+    --card-width: width: min(400px, 100%);
     --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
@@ -18,7 +18,7 @@ html,body{height:100%}
 body{
     margin:0;
     font-family:var(--font-family);
-    font-size:16px;
+    font-size:1rem;
     background:var(--grey-900);
     color:var(--secondary-white);
 }
@@ -60,7 +60,7 @@ body{
     color: var(--secondary-white);
     font-weight: 500;
     font-size: 1.75rem;
-    margin-bottom: 0.25rem;
+    margin: 0.25rem;
 }
 
 .location{
@@ -106,7 +106,7 @@ body{
     color: var(--grey-900);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 460px){
     
     .desktop{
         padding: 2rem;
@@ -125,6 +125,14 @@ body{
 
     .media-username{
         font-size: 1.5rem;
+    }
+
+    .location{
+        font-size: 0.875rem;
+    }
+
+    .social-links{
+        gap: 0.5rem;
     }
 
     .button{
