@@ -110,6 +110,7 @@ body{
     
     .desktop{
         padding: 2rem;
+        max-height: 100vh;
     }
 
     .card{
